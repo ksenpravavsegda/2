@@ -18,8 +18,9 @@ with conn:
     data = conn.recv(1024).decode("utf-8")
     print("Повідомлення від клієнта:", data)
     
-    conn.sendall("Повідомлення отримано!".encode("utf-8"))
+    print("Кількість символів у повідомленні:", len(data))
+    
+    conn.sendall("Повідомлення успішно отримано!".encode("utf-8"))
 
 server.close()
 print("Сервер завершив роботу.")
-
