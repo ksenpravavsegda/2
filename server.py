@@ -22,5 +22,4 @@ with conn:
 
 server.close()
 print("Сервер завершив роботу.")
-```[cite: 1]
 
